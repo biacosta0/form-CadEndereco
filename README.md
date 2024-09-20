@@ -1,7 +1,9 @@
 # form-CadEndereco
+O projeto a seguir tem como objetivo coletar, armazenar e manipular informações de endereço de usuários ou clientes. Para fazer esse projeto estamos usando de base o site https://viacep.com.br/. Nele encontramos informações e codigos para ser reutilizados.
+
 
 ## função de limpar consulta do form já realizada 
-![consulta-do-form](img/consulta-do-form.png)
+![consulta-do-form](img/consulta-do-form.png)    
 Esse código define uma função em JavaScript chamada `limparFormulario`, que limpa (ou seja, apaga) os valores de determinados campos de um formulário HTML.
 Aqui está uma explicação detalhada:
 ## 1. **Função `limparFormulario`**:  
@@ -21,7 +23,9 @@ Aqui está uma explicação detalhada:
     - **Cidade** (`id='Cidade'`)  
     - **Estado** (`id='Estado'`)  
 
-    Este código define duas funções em JavaScript para verificar se um CEP (Código de Endereçamento Postal) é válido.  
+   ## Este código define duas funções em JavaScript para verificar se um CEP (Código de Endereçamento Postal) é válido.  
+  ![verificacao](img/verificacao.png)
+
  Explicação do código:  
 1 Função eNumero:  
 ◦ Esta função verifica se a string numero passada como argumento contém apenas números.  
@@ -32,7 +36,9 @@ Aqui está uma explicação detalhada:
 ◦ O método .test(numero) verifica se a string numero corresponde à expressão regular.   
 2 Resumo: A função retorna true se a string contiver apenas números, ou false caso contrário.  
 
-O código define a função `preencherFomulario`, que tem o propósito de preencher automaticamente os campos de um formulário HTML com os dados de um endereço fornecido (provavelmente obtido por meio de uma API de CEP).  
+## O código define a função `preencherFomulario`, que tem o propósito de preencher automaticamente os campos de um formulário HTML com os dados de um endereço fornecido (provavelmente obtido por meio de uma API de CEP).  
+
+![p0reencher-campo](img/preencher-campos.png)
 ### Explicação:  
 1. **Função `preencherFomulario`**:  
   - A função recebe um parâmetro chamado `endereco`, que é um objeto contendo informações de um endereço (como `logradouro`, `bairro`, `localidade`, e `uf`).  
