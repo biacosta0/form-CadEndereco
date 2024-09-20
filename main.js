@@ -23,3 +23,4 @@ const preencherFomulario = (endereco) =>{
     document.getElementById('cidade').value = endereco.localidade;
     document.getElementById('estado').value = endereco.uf;
 }
+
