@@ -156,8 +156,8 @@ MDN Web Docs - JavaScript: MDN JavaScript
 MDN Web Docs - Funções: Funções em JavaScript  
 
 ## Expressões Regulares  
-MDN Web Docs - Expressões Regulares: Expressões Regulares   
-Validação de Dados em Formulários    
+MDN Web Docs - Expressões Regulares
+Validação de Dados em Formulários: 
 MDN Web Docs - Validação de Formulários:    
  Validação de Formulários em HTML e JavaScript  
 API ViaCEP  
