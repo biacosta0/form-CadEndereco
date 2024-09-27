@@ -146,12 +146,12 @@ Esta é a função que será chamada quando o evento focusout ocorrer. Nesse cas
 Comportamento
 Quando o usuário termina de digitar o CEP e clica fora do campo (ou navega para outro campo), a função pesquisarCep será chamada automaticamente. Isso inicia o processo de validação e, se o CEP for válido, a busca das informações correspondentes na API do ViaCEP.
 
-Resumo
+## Resumo:
 Esse código cria uma interação no formulário, permitindo que as informações do CEP sejam processadas assim que o usuário terminar de inserir os dados. Essa abordagem melhora a experiência do usuário, evitando a necessidade de um botão separado para realizar a pesquisa.
   
-
   ##  as seguintes fontes:
-## JavaScript e Funções  
+## JavaScript e Funções:  
+
 MDN Web Docs - JavaScript: MDN JavaScript  
 MDN Web Docs - Funções: Funções em JavaScript  
 
