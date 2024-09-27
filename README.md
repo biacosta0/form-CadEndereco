@@ -152,13 +152,13 @@ Esse código cria uma interação no formulário, permitindo que as informaçõe
   ##  as seguintes fontes:
 ## JavaScript e Funções:  
 
-MDN Web Docs - JavaScript: MDN JavaScript  
+MDN Web Docs - JavaScript: MDN JavaScript      
 MDN Web Docs - Funções: Funções em JavaScript  
 
-## Expressões Regulares  
-MDN Web Docs - Expressões Regulares
-Validação de Dados em Formulários: 
-MDN Web Docs - Validação de Formulários:    
- Validação de Formulários em HTML e JavaScript  
-API ViaCEP  
-ViaCEP: API ViaCEP (documentação sobre como usar a API de busca de CEPs)  
+## Expressões Regulares    
+MDN Web Docs - Expressões Regulares  
+Validação de Dados em Formulários:     
+MDN Web Docs - Validação de Formulários:     
+ Validação de Formulários em HTML e JavaScript    
+API ViaCEP    
+ViaCEP: API ViaCEP (documentação sobre como usar a API de busca de CEPs)    
