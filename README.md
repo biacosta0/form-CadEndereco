@@ -36,7 +36,7 @@ Aqui está uma explicação detalhada:
 ◦ O método .test(numero) verifica se a string numero corresponde à expressão regular.   
 2 Resumo: A função retorna true se a string contiver apenas números, ou false caso contrário.  
 
-## O código define a função `preencherFomulario`, que tem o propósito de preencher automaticamente os campos de um formulário HTML com os dados de um endereço fornecido (provavelmente obtido por meio de uma API de CEP).  
+ O código define a função `preencherFomulario`, que tem o propósito de preencher automaticamente os campos de um formulário HTML com os dados de um endereço fornecido (provavelmente obtido por meio de uma API de CEP).  
 
 ![preencher-campo](img/preencher-campos.png)
 ### Explicação:  
