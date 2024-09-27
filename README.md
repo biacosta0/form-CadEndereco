@@ -38,7 +38,7 @@ Aqui está uma explicação detalhada:
 
 ## O código define a função `preencherFomulario`, que tem o propósito de preencher automaticamente os campos de um formulário HTML com os dados de um endereço fornecido (provavelmente obtido por meio de uma API de CEP).  
 
-![p0reencher-campo](img/preencher-campos.png)
+![preencher-campo](img/preencher-campos.png)
 ### Explicação:  
 1. **Função `preencherFomulario`**:  
   - A função recebe um parâmetro chamado `endereco`, que é um objeto contendo informações de um endereço (como `logradouro`, `bairro`, `localidade`, e `uf`).  
@@ -59,3 +59,105 @@ Aqui está uma explicação detalhada:
 ### Resumo:  
 A função `preencherFomulario` pega os dados de um endereço (contidos no objeto `endereco`) e automaticamente insere esses dados nos respectivos campos de um formulário, como rua, bairro, cidade e estado. Isso torna a interação do usuário com o formulário mais ágil, evitando que ele precise digitar manualmente as informações.
 tem menu de contexto
+
+## Análise do CEP
+![análise-do-cep.png](img/Análise-do-cep.png)  
+Explicação das Funções  
+Função eNumero:  
+
+Definição: Essa função recebe um argumento chamado numero.  
+Expressão Regular: A expressão regular /^[0-9]+$/ é utilizada para verificar se a string numero contém apenas dígitos de 0 a 9.  
+^ indica o início da string.  
+[0-9]+ verifica se há um ou mais dígitos.  
+$ indica o final da string.  
+Método test: A função retorna true se a string corresponder à expressão regular (ou seja, se for composta apenas por números) e false caso contrário.  
+Função cepValido:  
+
+Definição: Essa função recebe um argumento chamado cep.  
+Condições de Validade:  
+cep.length == 8: Verifica se o comprimento do CEP é igual a 8 caracteres. Isso é um requisito típico para CEPs no Brasil.  
+eNumero(cep): Chama a função eNumero para verificar se o CEP contém apenas dígitos.  
+Resultado: A função retorna true se ambas as condições forem satisfeitas (comprimento igual a 8 e composto apenas por números), e false caso contrário.  
+Exemplos de Uso:  
+cepValido("12345678") retornaria true (é um CEP válido).  
+cepValido("1234a678") retornaria false (contém uma letra).  
+cepValido("12345") retornaria false (comprimento inválido).    
+
+## Análise do código PESQUISAR CEP 
+
+![Análise-do-CEP](img/Análise-do-cep.png)
+
+## Explicação dos Componentes  
+
+## Função Assíncrona (async):
+
+A palavra-chave async permite que você use await dentro da função, que é usada para esperar a resolução de promessas.  
+
+limparFormulario():
+
+Essa função é chamada para limpar quaisquer dados previamente preenchidos no formulário antes de fazer uma nova busca.  
+
+## Construção da URL:
+
+A URL para a API do ViaCEP é criada usando o valor do CEP inserido (cep.value).    
+
+Verificação de Validade do CEP:
+
+A função cepValido(cep.value) verifica se o CEP inserido é válido. Se for, o código prossegue com a busca.  
+
+## Busca de Dados (fetch):  
+
+const dados = await fetch(url); faz uma requisição à API do ViaCEP.
+fetch retorna uma promessa que resolve para a resposta da requisição.
+const addres = await dados.json(); converte a resposta em formato JSON, permitindo que você trabalhe com os dados.
+
+## Verificação de Erro:  
+
+addres.hasOwnProperty('erro'): verifica se a resposta contém a propriedade erro, indicando que o CEP não foi encontrado.  
+Se erro estiver presente, um alerta é mostrado informando que o CEP não foi encontrado.
+Caso contrário, a função preencherFormulario(addres) é chamada para preencher o formulário com os dados retornados da API.   
+ 
+## Tratamento de CEP Incorreto:
+
+Se o CEP não for válido, um alerta é mostrado informando que o CEP está incorreto.    
+
+## Código de preenchimento 
+
+![acao-de-preenchimento](img/acao-de-preenchimento.png)  
+
+## Explicação do Código 
+
+document.getElementById('cep'):
+
+Esta parte do código seleciona um elemento do DOM (Document Object Model) com o ID cep. Esse elemento é geralmente um campo de entrada onde o usuário insere o CEP.  
+
+addEventListener:  
+
+O método addEventListener é usado para registrar um evento no elemento selecionado. Ele escuta por um evento específico e, quando esse evento ocorre, executa uma função.  
+
+Evento focusout:  
+  
+O evento focusout é acionado quando o elemento perde o foco. Isso significa que, quando o usuário clica fora do campo de entrada ou navega para outro campo, esse evento é disparado.  
+
+pesquisarCep:
+
+Esta é a função que será chamada quando o evento focusout ocorrer. Nesse caso, a função pesquisarCep será executada para buscar as informações do CEP que o usuário digitou.
+Comportamento
+Quando o usuário termina de digitar o CEP e clica fora do campo (ou navega para outro campo), a função pesquisarCep será chamada automaticamente. Isso inicia o processo de validação e, se o CEP for válido, a busca das informações correspondentes na API do ViaCEP.
+
+Resumo
+Esse código cria uma interação no formulário, permitindo que as informações do CEP sejam processadas assim que o usuário terminar de inserir os dados. Essa abordagem melhora a experiência do usuário, evitando a necessidade de um botão separado para realizar a pesquisa.
+  
+
+  ##  as seguintes fontes:
+## JavaScript e Funções  
+MDN Web Docs - JavaScript: MDN JavaScript  
+MDN Web Docs - Funções: Funções em JavaScript  
+
+## Expressões Regulares  
+MDN Web Docs - Expressões Regulares: Expressões Regulares   
+Validação de Dados em Formulários    
+MDN Web Docs - Validação de Formulários:    
+ Validação de Formulários em HTML e JavaScript  
+API ViaCEP  
+ViaCEP: API ViaCEP (documentação sobre como usar a API de busca de CEPs)  

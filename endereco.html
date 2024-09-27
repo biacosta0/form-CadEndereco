@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Endereço</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
+
 <body>
-    
-    <form class="container mt-5">
-    <div class="form-control">
-    
-            <div class="mb-5 col-3 me-2" style="margin-top: 15px;">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">CEP</label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0000-000">
-                <div id="CEP" class="form-text"></div>
-              </div>
-        
-        <div class="d-flex">
+  <main>
+    <h2>Cadastro de Endereço</h2>
+    <form>
 
-            <div class="mb-2 col-3 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">Rua</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Rua Arara-Azul">
-                <div id="rua" class="form-text"></div>
-              </div>
-    
-              <div class="mb-2 col-3 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">N°</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="N° 123456789">
-                <div id="n°" class="form-text"></div>
-              </div>
-    
-              <div class="mb-5  col-3 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">Bairro</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cinco Conjuntos">
-                <div id="bairro" class="form-text"></div>
-              </div>
-    
-              
-            </form>
-        </div>
+      <label for="">CEP:</label>
+      <input type="text" id="cep"> 
 
-        <div class="d-flex">
+      <label for="">RUA:</label>
+      <input type="text"id="rua">
 
-            <div class="mb-3 col-2 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">Complemento</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Rua, Bairro ou Bloco">
-                <div id="complemento" class="form-text"></div>
-              </div>
-    
-              <div class="mb-3 col-2 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">Estado</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Paraná">
-                <div id="estado" class="form-text"></div>
-              </div>
-    
-              <div class="mb-3 col-2 me-2">
-                <label for="exampleInputEmail1" class="form-label" style="font-weight: bolder;">Cidade</label>
-                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Londrina">
-                <div id="cidade" class="form-text"></div>
-              </div>
-        </div>
+      <label for="text">NÚMERO:</label>
+      <input type="text" id="Numero">
 
-          <button type="submit" class="btn btn-primary mb-3 col-2">Enviar</button>
+      <label for="bairro">BAIRRO:</label>
+      <input type="text" id="bairro">
 
-        </div>
+      <label for="complemento">COMPLEMENTO:</label>
+      <input type="text" id="complemento">
 
-        </div>
+      <label for="">CIDADE:</label>
+      <input type="text" id="cidade">
 
+      <label for="">ESTADO:</label>
+      <input type="text" id="estado">
 
+      <button type="submit">ENTRAR</button>
+
+    </form>
+  </main>
+
+  <script src='main.js'></script>
 </body>
+
 </html>
