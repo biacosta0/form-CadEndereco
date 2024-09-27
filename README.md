@@ -71,7 +71,8 @@ Expressão Regular: A expressão regular /^[0-9]+$/ é utilizada para verificar 
 [0-9]+ verifica se há um ou mais dígitos.  
 $ indica o final da string.  
 Método test: A função retorna true se a string corresponder à expressão regular (ou seja, se for composta apenas por números) e false caso contrário.  
-Função cepValido:  
+
+## Função cepValido:  
 
 Definição: Essa função recebe um argumento chamado cep.  
 Condições de Validade:  
