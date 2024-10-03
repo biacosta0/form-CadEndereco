@@ -162,3 +162,6 @@ MDN Web Docs - Validação de Formulários:
  Validação de Formulários em HTML e JavaScript    
 API ViaCEP    
 ViaCEP: API ViaCEP (documentação sobre como usar a API de busca de CEPs)    
+
+## A seguir, o resultado:
+![gif](img/tela.gif)
